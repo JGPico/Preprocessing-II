@@ -10,18 +10,30 @@
         max-width: 800px;
         width: 100%;
         .customDisplay(space-between, center);
+        
+        @media @mobile {
+            flex-direction: column;
+        }
+
     }// end wrapper
 
 
     nav{
         width: 40%;
         .customDisplay(space-between, center);
+
+        @media @mobile {
+            width: 100%;
+            .customDisplay(space-around, center);
+        }
+
         a{
             text-decoration: none;
             font-size: 1.6rem;
+            color: black;
 
             &:hover{
-                color: green;
+                color: blue;
             }
 
         } // end a

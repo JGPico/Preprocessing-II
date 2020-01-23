@@ -5,3 +5,13 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.customButton(@color:@button-text , @bgColor:@button-bg){
+    color: @color;
+    background-color: @bgColor;
+    .customDisplay(center, center);
+    width: 20rem;
+    height: 4rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
